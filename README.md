@@ -1,6 +1,6 @@
 <h1>Encriptador de Texto</h1>
 
-- :construction: estado del proyecto en construccion. :construction:
+- :construction: Estado del proyecto en construccion. :construction:
 
 
 ![Diseño que ilustra Una imagen de una herramienta intuitiva para encriptar y desencriptar mensajes ](https://github.com/user-attachments/assets/5a2e85c3-f453-421a-902f-265889b6c0db)
