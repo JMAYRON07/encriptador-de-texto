@@ -44,3 +44,17 @@ function buttondesencriptar(){
 
         return stringdesencriptada
     }
+
+    async function copiarTexto(){
+        const ouputText = document.getElementById("ouputText");
+
+        ouputText.select();
+        ouputText.setSelectionRange(o,99999)
+        try{
+            await navigator.clipboard.writeText(ouputText.value);
+        }catch (err){
+            console.error("error al copiar el texto: ", err);
+        }
+            
+       
+    }

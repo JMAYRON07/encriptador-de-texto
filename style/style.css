@@ -11,8 +11,8 @@
 }
 body{
     display: flex;
-    height: 98vh;  
-    margin: 0;
+    height: 100vh;  
+    margin: 10px;
   
     
 }
@@ -26,11 +26,9 @@ body{
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     max-width: 1200px;
-    padding: 20PX;  
+    padding: 20px;  
 }
 main{
     display: flex;
@@ -39,24 +37,22 @@ main{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    width:  100%;
+ 
 
 }
 section{
     display: flex;
     flex-direction: column;
-    align-items: center;
 
 }
-.input-text, .ouput-text{
+.input-text{
     border: none;
     color: #0a3871;
-    padding: 20px;
-    margin-top: 90px;
+    padding: 120px;
     text-transform: lowercase;
     width: 100%;
-    max-width: 500px;
-    height: 200px;
+    max-width: 100%;
+    height: 80vh;
     resize: none;
 }
 ::placeholder{color: #0a3871;}
@@ -68,21 +64,28 @@ section{
     font-size: 18px;    
     margin-top: 10px;
 }
+
 .ouput-text{
-    background: rgb(230, 45, 45);
+    background: white;
     background-image: url(../img/Muñeco.png);
     background-repeat: no-repeat;
     border-radius: 24px;
     margin-left: 98px;
-    padding-left: 20px;
-    margin-top: 20px;
-    position: fixed;
+    padding: 20px;
+    height: 95vh;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+
 }
 .ouput-text:focus{
     outline: none;
 }
 
-.buttons{
+.buttons, .copiar{
     display: flex;
     margin-top: 18px;
 }
@@ -104,9 +107,14 @@ section{
     color: #0a3871;
     margin-left: 30px;
 }
-.copiar{
+.copiar{   
     color: #0a3871;
-    margin-left: 10px;
-    margin-top: 345px;
+    align-content: center;
     position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(28%);
+   
+    
+   
 }

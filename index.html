@@ -18,7 +18,7 @@
             <section>
                 <textarea class="input-text" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
                 <div>
-                    <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                    <h4 class="informacion">Solo letras minúsculas y sin acentos</h4>
                 </div>
                 <div class="buttons">
                     <button class="encriptar" onclick="buttonEncriptar()">Encriptar</button>
@@ -27,11 +27,10 @@
 
             </section>
             <section>
-                <textarea class="ouput-text" cols="20" rows="15"></textarea>
-                <div>
-                    <button class="copiar">Copiar</button>
-                </div>
-
+                    <textarea id="ouputText" class="ouput-text" cols="20" rows="15"></textarea>
+                    <div class="copy-button-container" >
+                        <button  class="copiar" onclick="copiarTexto()">Copiar</button>
+                    </div>
             </section>
                
         </main>
