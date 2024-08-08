@@ -11,10 +11,7 @@
 }
 body{
     display: flex;
-    height: 100vh;  
-    margin: 10px;
-  
-    
+    height: 110vh;    
 }
 .logo{
     padding-top: 10px;
@@ -24,7 +21,6 @@ body{
 }
 
 .container {
-    display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
@@ -32,26 +28,21 @@ body{
 }
 main{
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
- 
-
+    margin-left: 20px;
+    flex-direction: row;  
+     
 }
-section{
+.input, .ouput{
     display: flex;
     flex-direction: column;
+    margin: 0 20px;
 
 }
 .input-text{
     border: none;
     color: #0a3871;
-    padding: 120px;
+    padding: 100px;
     text-transform: lowercase;
-    width: 100%;
-    max-width: 100%;
     height: 80vh;
     resize: none;
 }
@@ -59,44 +50,60 @@ section{
 .input-text:focus{
     outline: none;
 }
+.informacion-container{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.informacion-icon{
+    font-size: 20px;
+    margin-right: 8px;
+    color: #6c757d;
+}
 .informacion{
     color: #495057;
-    font-size: 18px;    
-    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
+    font-size: 12px;
+    
+}
+.ouput{
+    background: white;
+    align-items: center;
+    align-content: center;
+    border-radius: 24px;
+    max-width: 100%;
+    height: 105vh;   
+    border: 5px solid rgba(128, 128, 128, 0.090);
+    
 }
 
 .ouput-text{
-    background: white;
+    background: none;
     background-image: url(../img/Muñeco.png);
     background-repeat: no-repeat;
-    border-radius: 24px;
-    margin-left: 98px;
-    padding: 20px;
-    height: 95vh;
-    width: 100%;
-    max-width: 100%;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    
-
+    background-position: center;
+    background-size: 236px 204px;
+    border: none;
 }
 .ouput-text:focus{
     outline: none;
 }
 
-.buttons, .copiar{
+.buttons{
     display: flex;
     margin-top: 18px;
 }
 .encriptar, .desencriptar, .copiar{
     border: 1px solid #0a3871;
     border-radius: 24px;
+    font-size: 24px;
     cursor: pointer;
     height: 67px;
     width: 328px;
-
-
+    max-width: 328px;
+    flex: 1;
 }
 .encriptar{
     background-color: #0a3871;
@@ -107,14 +114,14 @@ section{
     color: #0a3871;
     margin-left: 30px;
 }
-.copiar{   
-    color: #0a3871;
-    align-content: center;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translate(28%);
-   
-    
-   
+.copy-button-container{
+    background: none;
 }
+
+.copiar{   
+    background: none;
+    margin-top: 50px; 
+    color: #0a3871;  
+}
+
+

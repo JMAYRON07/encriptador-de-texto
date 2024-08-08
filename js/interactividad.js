@@ -49,7 +49,7 @@ function buttondesencriptar(){
         const ouputText = document.getElementById("ouputText");
 
         ouputText.select();
-        ouputText.setSelectionRange(o,99999)
+        ouputText.setSelectionRange(0,99999)
         try{
             await navigator.clipboard.writeText(ouputText.value);
         }catch (err){
