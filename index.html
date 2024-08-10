@@ -24,13 +24,17 @@
                 </div>
                 <div class="buttons">
                     <button class="encriptar" onclick="buttonEncriptar()">Encriptar</button>
-                    <button class="desencriptar" onclick="buttondesencriptar()">Desencriptar</button>
+                    <button class="desencriptar" onclick="buttonDesencriptar()">Desencriptar</button>
                 </div>
 
             </section>
             <section class="ouput">
                     <textarea id="ouputText" class="ouput-text" cols="20" rows="10"></textarea>
-                    <div class="copy-button-container" >
+                    <div class="ouput-info-text" id="ouput-info">
+                        <h4 class="ouput-info-text-alert">Ningún mensaje fue encontrado</h4>
+                        <p class="ouput-info-text-adver">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div class="copy-button-container" id="buttonCopy" style="display: none;">
                         <button  class="copiar" onclick="copiarTexto()">Copiar</button>
                     </div>
             </section>

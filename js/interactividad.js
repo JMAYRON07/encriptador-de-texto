@@ -1,11 +1,16 @@
 const inputText = document.querySelector(".input-text");
 const ouputText = document.querySelector(".ouput-text");
+const ouputInfo = document.getElementById("ouput-info");
+const buttonCopy= document.getElementById("buttonCopy");
 
 function buttonEncriptar(){
     const textoEncriptado = encriptar(inputText.value)
     ouputText.value = textoEncriptado
     inputText.value = "";
-    ouputText.style.backgroundImage = "none"
+
+    ouputText.style.backgroundImage = "none";
+    ouputInfo.style.display = "none";
+    buttonCopy.style.display = "block";
 
 }
 
@@ -25,10 +30,15 @@ function encriptar(stringEncriptada){
     return stringEncriptada
 }
 
-function buttondesencriptar(){
+function buttonDesencriptar(){
     const textoEncriptado = desencriptar(inputText.value)
     ouputText.value = textoEncriptado
     inputText.value = "";
+
+    ouputText.style.backgroundImage = "none"
+    ouputInfo.style.display = "none";
+    buttonCopy.style.display = "block";
+
 }
 
     function desencriptar(stringdesencriptada){
